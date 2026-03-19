@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Water Quest</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class ="logo">
+    <img src="img/cw_logo_horizontal.png" alt="Water Quest Logo">
+  </div>
+  <div class="container">
+    <h1>Water Quest</h1>
+    <p class="game-instructions">Collect 20 items to complete the game!</p>
+    <div class="stats">
+      <p>Cans Collected: <span id="current-cans">0</span></p>
+      <p>Time Left: <span id="timer">5</span>s</p>
+    </div>
+    <div id="achievements" class="achievement"></div>
+    <div class="game-grid"></div>
+    <button id="start-game">Start Game</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js" defer></script>
+  <div class="instructions">
+    <button
+      id="instructions-toggle"
+      class="instructions-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="instructions-panel"
+    >
+      <span>How to Play</span>
+      <span class="instructions-icon" aria-hidden="true">+</span>
+    </button>
+    <div id="instructions-panel" class="instructions-panel" hidden>
+      <p>Collect at least 20 cans before the timer runs out to win.</p>
+      <p>You can click the jerry can icon multiple times before it disappears.</p>
+    </div>
+  </div>
+</body>
+</html>
